@@ -1,0 +1,186 @@
+body {
+    background: #f4f4f4 url('BackGround-back.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Handwritting"; 
+    color: #030303;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-dark .navbar-brand {
+    font-size: 1.5rem;
+    font-family: "Handwritting";
+    font-weight: bold;
+}
+
+.navbar-dark .nav-link {
+    color: #fff;
+    font-family: "Handwritting";
+}
+
+.navbar-dark .nav-link:hover {
+    color: #ff6666;
+}
+
+.file-container {
+    position: relative;
+    background: #f4f4f4 url('paper.jpg');
+    padding: 20px 40px;
+    border: 1px solid #1b1b1b2f;
+    border-radius: 3px;
+    max-width: 800px;
+    margin: 30px auto; 
+    box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.29);
+}
+.file-container-normal {
+    position: relative;
+    background: white;
+    padding: 20px 40px;
+    border: 1px solid #1b1b1b2f;
+    border-radius: 3px;
+    max-width: 800px;
+    margin: 30px auto; 
+    box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.29);
+}
+.profile-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+
+h1.display-4 {
+    position: absolute;
+    font-family: "Handwritting", system-ui;
+    top: 10px;
+    right: 80%;
+    z-index: 2;
+    font-weight: bold;
+    border: 3px solid red;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: rotate(-45deg);
+    color: rgb(255, 255, 255);
+}
+.display-4-hide {
+
+    visibility: hidden;
+
+}
+
+.profile-photo {
+    width: 150px; 
+    height: 250px;
+    margin-top: 30px;
+    object-fit: cover; 
+    border: 1px solid #1d1d1da4;
+    border-radius: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    filter: grayscale(100%) contrast(0.8) brightness(1.1);
+    opacity: 0.9;
+    transition: filter 0.3s ease, opacity 0.3s ease; 
+}
+.profile-photo-normal {
+
+    width: 200px; 
+    height: 250px;
+    margin-top: 30px;
+    object-fit: cover; 
+    border: 1px solid #1d1d1da4;
+    border-radius: 2%;
+    filter: grayscale(0) contrast(1) brightness(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+
+}
+.profile-photo:hover {
+    filter: grayscale(0) contrast(1) brightness(1);
+    opacity: 1; 
+}
+.name {
+
+    margin-top: 30px;
+
+}
+
+.section-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.dashed-line {
+    border: none;
+    border-top: 2px dashed #333;
+    margin: 20px 0;
+}
+
+
+ul, ol {
+    margin-left: 20px;
+}
+
+
+a {
+    color: #ff6666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.top-right-button {
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    z-index: 10;
+}
+
+.top-right-button button {
+    font-family: "Handwritting", system-ui;
+    font-weight: bold;
+    color: rgb(255, 0, 0); 
+    background-color: #00000000;
+    border: 2px solid red; 
+    border-radius: 2px; 
+    padding: 5px 5px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.top-right-button button:hover {
+    background-color: #00000031; 
+}
+
+@media (max-width: 768px) {
+    .file-container {
+        padding: 15px 20px;
+    }
+
+    h1.display-4 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .top-right-button {
+        top: 10px; 
+        right: 10px;
+    }
+
+    .top-right-button button {
+        font-size: 15px; 
+        padding: 4px 8px; 
+    }
+}
